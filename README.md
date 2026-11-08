@@ -58,6 +58,76 @@ init, add, commit, push, pull, checkout, clone이 각각 무엇을 하는지 설
 * .gitignore, README.md 파일을 생성한다.
 * Git: 초기 설정 완료 후 첫 번째 commit과 push를 수행한다.
 
+* GitHub에 새 저장소를 생성한다.
+<img width="935" height="96" alt="image" src="https://github.com/user-attachments/assets/8892e6b7-24b6-4d29-b0b6-01929f655bb3" />
+
+```bash
+# * (2) 로컬에 저장소를 설정한다.
+# 홈 디렉터리로 이동
+cd ~
+
+# Python 퀴즈 게임 프로젝트 폴더 생성
+mkdir codyssey-training-E1-2
+
+# 생성한 프로젝트 폴더로 이동
+cd codyssey-training-E1-2
+
+# 현재 작업 디렉터리 확인
+pwd
+# 실행 결과 예시: /Users/사용자계정/codyssey-training-E1-2
+```
+-----
+```bash
+#로컬 Git 저장소 초기화
+# 현재 폴더를 Git 저장소로 초기화
+git init
+# 실행 결과 예시: Initialized empty Git repository in .../codyssey-training-E1-2/.git/
+
+# Git 저장소 상태 확인
+git status
+# 실행 결과 예시: On branch main 또는 On branch master
+# 실행 결과 예시: No commits yet
+# 실행 결과 예시: nothing to commit (create/copy files and use "git add" to track)
+```
+-----
+
+* .gitignore, README.md 파일을 생성한다.
+*** .gitignore: Git이 추적하지 않을 파일을 지정합니다.
+*** README.md: GitHub에서 프로젝트의 목적, 실행 방법, 기능 등을 설명하는 문서입니다.
+
+```bash
+# (3) .gitignore 및 README.md 파일 생성
+# Git 추적 제외 설정 파일 생성
+touch .gitignore
+# 실행 결과: .gitignore 파일 생성 (성공 시 출력 없음)
+
+# 프로젝트 설명 문서 생성
+touch README.md
+# 실행 결과: README.md 파일 생성 (성공 시 출력 없음)
+
+# 숨김 파일을 포함하여 생성된 파일 확인
+ls -la
+# 실행 결과: .git, .gitignore, README.md 항목 확인
+```
+
+----
+.gitignore 파일을 VS Code에서 열어 다음 내용을 입력하세요.
+README.md 구현예정이라고 적기
+```bash
+# Python 실행 시 생성되는 캐시 파일
+__pycache__/
+*.pyc
+
+# Python 가상환경 폴더
+.venv/
+venv/
+
+# 운영체제 및 편집기 임시 파일
+.DS_Store
+.vscode/
+```
+----
+
 ### 메뉴 기능
 * 프로그램 실행 시 메뉴가 출력되어야 한다.
 * 사용자가 기능을 선택할 수 있어야 한다.
