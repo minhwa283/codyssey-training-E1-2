@@ -51,6 +51,8 @@ init, add, commit, push, pull, checkout, clone이 각각 무엇을 하는지 설
 
 
 # 기능 요구 사항
+### 개발환경
+Python 버전, VS Code, Git 확인
 
 ### Git 저장소 설정
 * GitHub에 새 저장소를 생성한다.
