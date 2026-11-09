@@ -73,9 +73,30 @@ init, add, commit, push, pull, checkout, clone이 각각 무엇을 하는지 설
 ### 기능 요구 사항
 
 ** 프로그램 설계서 작성 및 첨부하기 **
+<img width="1253" height="764" alt="image" src="https://github.com/user-attachments/assets/7fb2b1ea-bb3f-4996-8b27-70c0b0722ba8" />
+<br><br>
+<img width="1253" height="641" alt="image" src="https://github.com/user-attachments/assets/9ae84471-6c60-43fd-92ce-792993c93517" />
+
+* FR은 Functional Requirement의 약자로, '기능 요구사항'이라는 뜻
 
 ### 개발환경
 Python 버전, VS Code, Git 확인
+```bash
+minhwa283@GNIA-C202-C01:/mnt/c/Windows/system32$ lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 26.04.1 LTS
+Release:        26.04
+Codename:       resolute
+minhwa283@GNIA-C202-C01:/mnt/c/Windows/system32$ python3 --version
+Python 3.14.4
+minhwa283@GNIA-C202-C01:/mnt/c/Windows/system32$ git --version
+git version 2.53.0
+
+```
+<img width="454" height="121" alt="image" src="https://github.com/user-attachments/assets/6ad20110-3b81-4ede-aa7c-85dd46b51968" />
+
+
 <br>
 
 # STEP1. Git 저장소 설정
@@ -90,69 +111,161 @@ Python 버전, VS Code, Git 확인
 ```bash
 # * (2) 로컬에 저장소를 설정한다.
 # 홈 디렉터리로 이동
-cd ~
-
+minhwa283@GNIA-C202-C01:/mnt/c/Windows/system32$ cd ~
 # Python 퀴즈 게임 프로젝트 폴더 생성
-mkdir codyssey-training-E1-2
-
+minhwa283@GNIA-C202-C01:~$ mkdir world-country-quiz
 # 생성한 프로젝트 폴더로 이동
-cd codyssey-training-E1-2
-
+minhwa283@GNIA-C202-C01:~$ cd world-country-quiz
 # 현재 작업 디렉터리 확인
-pwd
-# 실행 결과 예시: /Users/사용자계정/codyssey-training-E1-2
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ pwd
+/home/minhwa283/world-country-quiz
+# VS Code로 프로젝트 열기
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ code .
+# VS CODE에서 리눅스 연결 확인
+minhwa283@GNIA-C202-C01:~$ uname -s
+Linux
 ```
------
-```bash
-#로컬 Git 저장소 초기화
-# 현재 폴더를 Git 저장소로 초기화
-git init
-# 실행 결과 예시: Initialized empty Git repository in .../codyssey-training-E1-2/.git/
-
-# Git 저장소 상태 확인
-git status
-# 실행 결과 예시: On branch main 또는 On branch master
-# 실행 결과 예시: No commits yet
-# 실행 결과 예시: nothing to commit (create/copy files and use "git add" to track)
-```
------
+<img width="430" height="86" alt="image" src="https://github.com/user-attachments/assets/3c4b8bdc-b06c-4f81-aaf8-07a5bb402338" />
+<img width="1085" height="679" alt="image" src="https://github.com/user-attachments/assets/2777dc80-51fe-48c5-8d59-c9c3717d20ab" />
+<img width="382" height="30" alt="image" src="https://github.com/user-attachments/assets/aab52f3a-8a0b-4332-88f7-4ae21b0bfdeb" />
 
 * .gitignore, README.md 파일을 생성한다.
 *** .gitignore: Git이 추적하지 않을 파일을 지정합니다.
 *** README.md: GitHub에서 프로젝트의 목적, 실행 방법, 기능 등을 설명하는 문서입니다.
-
+  
 ```bash
 # (3) .gitignore 및 README.md 파일 생성
-# Git 추적 제외 설정 파일 생성
-touch .gitignore
-# 실행 결과: .gitignore 파일 생성 (성공 시 출력 없음)
+# README.md VS Code New file 이용하여 파일생성
+# .gitignore : Git 추적 제외 설정 파일 생성
 
-# 프로젝트 설명 문서 생성
-touch README.md
-# 실행 결과: README.md 파일 생성 (성공 시 출력 없음)
-
-# 숨김 파일을 포함하여 생성된 파일 확인
-ls -la
-# 실행 결과: .git, .gitignore, README.md 항목 확인
 ```
+<img width="511" height="221" alt="image" src="https://github.com/user-attachments/assets/02c929db-4572-4f68-99f9-3ce194b8c71e" />
 
-----
-.gitignore 파일을 VS Code에서 열어 다음 내용을 입력하세요.
-README.md 구현예정이라고 적기
+-----
 ```bash
-# Python 실행 시 생성되는 캐시 파일
-__pycache__/
-*.pyc
 
-# Python 가상환경 폴더
-.venv/
-venv/
+# 현재 폴더를 Git 저장소로 초기화
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ git init -b main
+Initialized empty Git repository in /home/minhwa283/world-country-quiz/.git/
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ git status
+On branch main
 
-# 운영체제 및 편집기 임시 파일
-.DS_Store
-.vscode/
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+# 파일을 Git의 커밋 준비 영역(Staging Area)에 올림
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ git add README.md .gitignore
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   README.md
+
+# 커밋
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ git commit -m "Chore: Initialize quiz game project"
+# user name 및 email 정의되지 않음
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <minhwa283@GNIA-C202-C01.ad.gnia.kr>) not allowed
+# user name 및 email 입력
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ git config --global user.name "minhwa283"
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ git config --global user.email "minhwa283@gmail.com"
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ git config --global --list
+user.name=minhwa283
+user.email=minhwa283@gmail.com
+
+# Git 커밋
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ git commit -m "Chore: Initialize quiz game project"
+[main (root-commit) 77096a4] Chore: Initialize quiz game project
+ 2 files changed, 19 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 README.md
 ```
+<img width="473" height="161" alt="image" src="https://github.com/user-attachments/assets/c15c7e3d-53de-4952-b0bf-e1c007ae482f" />
+<img width="599" height="454" alt="image" src="https://github.com/user-attachments/assets/a6d3e980-6114-456f-8fff-3829c9edf9bf" />
+
+
+-----
+```bash
+# GitHub 원격 저장소 연결
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ git remote add origin https://github.com/minhwa283/codyssey-training-E1-2.git
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ git remote -v
+origin  https://github.com/minhwa283/codyssey-training-E1-2.git (fetch)
+origin  https://github.com/minhwa283/codyssey-training-E1-2.git (push)
+
+#push를 하기 전에 GitHub 저장소에 기존 커밋이 있는지 확인
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ git ls-remote --heads origin
+# 이미 브랜치가 존재
+517a92b3c369693b6e149f1dcb2d6e5bc99aba01        refs/heads/main
+# 원격 저장소 내용 확인
+# GitHub의 커밋 정보를 가져오지만, 현재 작성한 파일이나 로컬 브랜치를 자동으로 변경하지 않
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ git fetch origin
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 15 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (15/15), 8.59 KiB | 2.86 MiB/s, done.
+From https://github.com/minhwa283/codyssey-training-E1-2
+ * [new branch]      main       -> origin/main
+
+# GitHub main 브랜치의 최근 커밋 최대 5개를 보여줌
+minhwa283@GNIA-C202-C01:~/world-country-quiz$ git log origin/main --oneline -5
+517a92b (origin/main, origin/HEAD) Update README.md
+6d65091 Update README.md
+356d29f Update README.md
+0bdd19e Update README.md
+90dcfef Initial commit
+
+# Git 레파지토리명 변경과 Git 커밋 이력 다름으로 인한 복제
+minhwa283@GNIA-C202-C01:~$ git clone https://github.com/minhwa283/codyssey-training-E1-2.git
+Cloning into 'codyssey-training-E1-2'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 15 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (15/15), 8.61 KiB | 8.61 MiB/s, done.
+Resolving deltas: 100% (3/3), done.
+```
+<img width="622" height="317" alt="image" src="https://github.com/user-attachments/assets/2f9e212c-16be-4a16-a29c-de85dcefde86" />
+
+```bash
+# Git Push
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 384 bytes | 384.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/minhwa283/codyssey-training-E1-2.git
+   517a92b..e23c26a  main -> main
+
+```
+<img width="512" height="119" alt="image" src="https://github.com/user-attachments/assets/bf2fdcb4-8804-4312-822c-2a0ca436f76c" />
+<img width="679" height="203" alt="image" src="https://github.com/user-attachments/assets/ee1fb560-56b3-4da8-9bc4-262bf2c2950c" />
+
 ----
+
 
 # STEP2. 메뉴 기능
 * 프로그램 실행 시 메뉴가 출력되어야 한다.
