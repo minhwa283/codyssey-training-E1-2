@@ -160,3 +160,39 @@ class QuizGame:
             json.dump(data, file, ensure_ascii=False, indent=4)
 
         print("게임 데이터가 저장되었습니다.")
+
+
+    # JSON 파일에서 게임 데이터 불러오기
+    def load_state(self):
+        file_path = Path(__file__).resolve().parent / "state.json"
+
+        # 저장된 파일이 없으면 기본 문제 등록
+        if not file_path.exists():
+            self.load_default_quizzes()
+            return
+
+        # JSON 파일 읽기
+        try:
+            with open(file_path, "r", encoding="utf-8") as file:
+                data = json.load(file)
+
+            # 저장된 최고 점수 복원
+            self.high_score = data["high_score"]
+
+            # 저장된 퀴즈 문제 복원
+            self.quizzes = []
+
+            for item in data["quizzes"]:
+                self.add_quiz(
+                    item["question"],
+                    item["options"],
+                    item["answer"]
+                )
+
+            print("저장된 게임 데이터를 불러왔습니다.")
+
+        except (OSError, ValueError, KeyError, TypeError):
+            print("저장된 데이터를 읽을 수 없어 기본 문제를 불러옵니다.")
+            self.high_score = 0
+            self.quizzes = []
+            self.load_default_quizzes()    
