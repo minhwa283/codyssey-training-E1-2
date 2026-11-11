@@ -357,10 +357,13 @@ minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ python3 main.py
 0. 종료
 메뉴 번호를 선택하세요: ^C
 게임을 종료합니다.
+
+
 ```
 <img width="926" height="621" alt="image" src="https://github.com/user-attachments/assets/da941ea9-e6c3-4e59-993b-1fd9ae5ebd80" />
 <img width="580" height="68" alt="image" src="https://github.com/user-attachments/assets/9e22742a-dec3-4b24-a4d8-5fb6025df14f" />
 <img width="674" height="187" alt="image" src="https://github.com/user-attachments/assets/db4d6f5a-166b-4a4f-ad03-8d83b35fd717" />
+
 
 
 
@@ -384,7 +387,30 @@ minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ python3 main.py
   - 정답은 1~4 중 하나의 번호로 관리하는 방식을 권장한다. (구현에서 일관성 유지)
   - 메서드: 퀴즈 출력, 정답 확인 등 필요한 기능을 구현한다.
   - Git: Quiz 클래스 작성 후 커밋한다.
+    
+```bash
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ python3 main.py
 
+문제: 대한민국의 수도는?
+1. 부산
+2. 서울
+3. 대구
+4. 인천
+True
+False
+
+===== 세계 여러 나라 퀴즈 게임 =====
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 최고 점수
+0. 종료
+메뉴 번호를 선택하세요: 0
+게임을 종료합니다.    
+```
+<img width="695" height="692" alt="image" src="https://github.com/user-attachments/assets/a2830949-74c1-4669-9c0a-4875d5f8c6e2" />
+
+\
 # STEP5. 기본 퀴즈 데이터
 * 본인이 선택한 주제의 퀴즈 5개 이상을 직접 작성한다.
 * 각 퀴즈는 문제, 선택지(4개), 정답을 포함한다.
@@ -406,6 +432,17 @@ minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ python3 main.py
 * 잘못된 입력에 대한 처리가 있어야 한다. (공통 입력/예외 처리 기준 포함)
 * 추가한 퀴즈를 파일에 저장한다.
 * Git: 퀴즈 추가 기능 완성 후 커밋한다.
+* 
+```bash
+===== 퀴즈 추가 =====
+문제를 입력하세요: 호주의 수도는?
+1번 보기를 입력하세요: 시드니
+2번 보기를 입력하세요: 멜버른
+3번 보기를 입력하세요: 캔버라
+4번 보기를 입력하세요: 퍼스
+정답 번호를 입력하세요 (1~4): 3
+```
+<img width="668" height="283" alt="image" src="https://github.com/user-attachments/assets/46d1be6b-f11b-4cf3-a682-1e7a0b02cdc1" />
 
 # STEP8. 퀴즈 목록
 * 저장된 퀴즈 목록을 확인할 수 있다.
@@ -424,6 +461,52 @@ minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ python3 main.py
 * 속성: 퀴즈 목록, 최고 점수 등
 * 메서드: 메뉴 표시, 퀴즈 풀기, 퀴즈 추가, 목록 보기, 점수 확인, 파일 저장/불러오기 등
 * Git: 클래스 구조 정리 후 커밋한다.
+* 
+```bash
+
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ python3 main.py
+등록된 문제 수: 5
+
+문제: 대한민국의 수도는?
+1. 부산
+2. 서울
+3. 대구
+4. 인천
+
+문제: 일본의 수도는?
+1. 오사카
+2. 교토
+3. 도쿄
+4. 후쿠오카
+
+문제: 프랑스의 수도는?
+1. 파리
+2. 런던
+3. 로마
+4. 베를린
+
+문제: 브라질이 위치한 대륙은?
+1. 유럽
+2. 아시아
+3. 남아메리카
+4. 아프리카
+
+문제: 이집트의 수도는?
+1. 카이로
+2. 나이로비
+3. 아테네
+4. 마드리드
+
+===== 세계 여러 나라 퀴즈 게임 =====
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 최고 점수
+0. 종료
+메뉴 번호를 선택하세요: 0
+게임을 종료합니다.
+```
+<img width="617" height="651" alt="image" src="https://github.com/user-attachments/assets/e60e8d81-8e62-401d-912d-94c72b1951c6" />
 
 # STEP11. 파일 저장/불러오기 ('state.json**') **
 * 퀴즈 데이터와 최고 점수를 프로젝트 루트의 state.json에 저장하는 기능을 구현한다. (UTF-8 인코딩 권장)
