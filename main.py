@@ -8,8 +8,26 @@ def show_menu():
 
 
 def main():
-    show_menu()
+     #사용자가 종료를 선택하기 전까지 퀴즈 게임 메뉴를 계속 보여주기 위함
+     while True:
+        show_menu()
 
+        try:
+            #.strip() 앞뒤 공백제거
+            choice = input("메뉴 번호를 선택하세요: ").strip()
+        #KeyboardInterrupt Ctrl+C로 실행을 중단할 때 발생하는 예외 
+        #EOFError Ctrl+D 등으로 입력이 종료될 때 발생하는 예외
+        except (KeyboardInterrupt, EOFError):
+            print("\n게임을 종료합니다.")
+            break
+
+        if choice == "0":
+            print("게임을 종료합니다.")
+            break
+        elif choice in ("1", "2", "3", "4"):
+            print(f"{choice}번 메뉴를 선택했습니다.")
+        else:
+            print("잘못된 입력입니다. 다시 선택하세요.")
 
 
 #__name__ : Python이 자동으로 만들어 주는 특별한 변수 Python 파일을 실행하는 방식에 따라 값이 달라진다.
