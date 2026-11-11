@@ -34,7 +34,7 @@ def main():
         else:
             print("잘못된 입력입니다. 다시 선택하세요.")
 
-  
+
 #__name__ : Python이 자동으로 만들어 주는 특별한 변수 Python 파일을 실행하는 방식에 따라 값이 달라진다.
 #__main__ : python3 main.py로 직접 실행 / main 다른 Python 파일에서 import main
 
