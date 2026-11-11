@@ -42,7 +42,7 @@ def main():
                 game.show_quiz_list()
 
             elif choice == "4":
-                print(f"{choice}번 메뉴를 선택했습니다.")
+                game.show_high_score()
 
             else:
               print("잘못된 입력입니다. 다시 선택하세요.")

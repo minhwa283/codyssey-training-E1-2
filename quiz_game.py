@@ -12,6 +12,7 @@ class QuizGame:
     # 게임 객체를 생성할 때 실행
     def __init__(self):
         self.score = 0
+        self.high_score = 0  # 최고 점수
         self.quizzes = []
 
     # 게임에 퀴즈 문제 추가
@@ -81,6 +82,12 @@ class QuizGame:
         # 최종 점수 출력
         print(f"\n퀴즈 종료! 최종 점수: {self.score}점")
 
+          # 최고 점수 갱신
+        if self.score > self.high_score:
+           self.high_score = self.score
+           print("새로운 최고 점수입니다!")
+
+
     # 사용자가 직접 퀴즈를 추가하는 메서드
     def input_quiz(self):
         print("\n===== 퀴즈 추가 =====")
@@ -123,3 +130,7 @@ class QuizGame:
             print(f"\n{index}번 문제")
             quiz.show_question()
             print(f"정답 번호: {quiz.answer}")
+
+    # 최고 점수 조회
+    def show_high_score(self):
+        print(f"\n최고 점수: {self.high_score}점")
