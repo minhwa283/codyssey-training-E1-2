@@ -1,3 +1,8 @@
+## Date : 2026-11-11
+## Author : imminhwa
+## Description : 세계 여러 나라 퀴즈 게임
+## 구현 기능 : 메뉴 번호 입력 및 반복 출력, 잘못된 번호·문자·빈 입력 처리, 0 입력 시 종료, Ctrl+C/D 입력 시 정상 종료              
+
 def show_menu():
     print("\n===== 세계 여러 나라 퀴즈 게임 =====")
     print("1. 퀴즈 풀기")
@@ -29,7 +34,6 @@ def main():
         else:
             print("잘못된 입력입니다. 다시 선택하세요.")
 
-
 #__name__ : Python이 자동으로 만들어 주는 특별한 변수 Python 파일을 실행하는 방식에 따라 값이 달라진다.
 #__main__ : python3 main.py로 직접 실행 / main 다른 Python 파일에서 import main
 
@@ -40,3 +44,5 @@ def main():
 # 파이썬은 위에서 아래로 로드 후 실행 이 로직이 위로 올라가면 main 메서드 못찾아서 NameError: name 'main' is not defined 오류 발생
 if __name__ == "__main__":
     main()
+
+    
