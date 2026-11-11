@@ -54,6 +54,15 @@ def main():
             break
 
 
+# JSON 저장 기능 테스트
+from quiz_game import QuizGame
+
+test_game = QuizGame()
+test_game.load_default_quizzes()
+test_game.high_score = 80
+
+test_game.save_state()
+
 #__name__ : Python이 자동으로 만들어 주는 특별한 변수 Python 파일을 실행하는 방식에 따라 값이 달라진다.
 #__main__ : python3 main.py로 직접 실행 / main 다른 Python 파일에서 import main
 

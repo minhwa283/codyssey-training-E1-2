@@ -3,6 +3,9 @@
 ## Description : 
 ## 구현 기능 :          
 
+import json
+from pathlib import Path
+
 from quiz import Quiz
 
 
@@ -134,3 +137,26 @@ class QuizGame:
     # 최고 점수 조회
     def show_high_score(self):
         print(f"\n최고 점수: {self.high_score}점")
+
+    # 게임 데이터를 JSON 파일에 저장
+    def save_state(self):
+        data = {
+            "high_score": self.high_score,
+            "quizzes": []
+        }
+
+        # 퀴즈 객체를 저장 가능한 데이터로 변환
+        for quiz in self.quizzes:
+            data["quizzes"].append({
+                "question": quiz.question,
+                "options": quiz.options,
+                "answer": quiz.answer
+            })
+
+        # 프로젝트 폴더의 state.json에 저장
+        file_path = Path(__file__).resolve().parent / "state.json"
+
+        with open(file_path, "w", encoding="utf-8") as file:
+            json.dump(data, file, ensure_ascii=False, indent=4)
+
+        print("게임 데이터가 저장되었습니다.")
