@@ -2,6 +2,7 @@ _[올인원 - 입학연수 E1-2]_
 <img width="687" height="210" alt="image" src="https://github.com/user-attachments/assets/c60c6b20-60e0-463c-921b-96afa1f33bd6" />
 
 <br><br>
+*함수(function), 메서드(method), 클래스
 
 # 📌 프로젝트 개요
 
@@ -273,6 +274,96 @@ To https://github.com/minhwa283/codyssey-training-E1-2.git
 * 종료 기능이 있어야 한다.
 * 잘못된 입력에 대한 처리가 있어야 한다.
 * Git: 메뉴 기능 완성 후 커밋한다.
+
+### 1. main.py 작성 및 코드 커밋 => 메인 함수
+```bash
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ python3 main.py
+
+===== 세계 여러 나라 퀴즈 게임 =====
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 최고 점수
+0. 종료
+
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git add main.py
+
+# Feat은 Feature(기능)의 줄임말로 Git 커밋 메시지에서 '새로운 기능을 추가'했을 때 사용하는 표현
+
+# Feat (Feature)	새로운 기능 추가
+# Fix	(Fix)	오류 수정
+# Docs	(Documentation)	문서 작성 및 수정
+# Refactor	(Refactoring)	기능 변경 없이 코드 구조 개선
+# Chore	(Chore)	설정 및 기타 관리 작업
+# Test	(Test)	테스트 코드 추가 및 수정
+
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git commit -m "Feat: 퀴즈 게임 main 메뉴 구현"
+[main ad76033] Feat: 퀴즈 게임 main 메뉴 구현
+ 1 file changed, 24 insertions(+)
+ create mode 100644 main.py
+
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ python3 main.py
+
+===== 세계 여러 나라 퀴즈 게임 =====
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 최고 점수
+0. 종료
+메뉴 번호를 선택하세요: 1 
+1번 메뉴를 선택했습니다.
+
+===== 세계 여러 나라 퀴즈 게임 =====
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 최고 점수
+0. 종료
+메뉴 번호를 선택하세요: 2
+2번 메뉴를 선택했습니다.
+
+===== 세계 여러 나라 퀴즈 게임 =====
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 최고 점수
+0. 종료
+메뉴 번호를 선택하세요: 9
+잘못된 입력입니다. 다시 선택하세요.
+
+===== 세계 여러 나라 퀴즈 게임 =====
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 최고 점수
+0. 종료
+메뉴 번호를 선택하세요: 15
+잘못된 입력입니다. 다시 선택하세요.
+
+===== 세계 여러 나라 퀴즈 게임 =====
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 최고 점수
+0. 종료
+메뉴 번호를 선택하세요: 0
+게임을 종료합니다.
+
+===== 세계 여러 나라 퀴즈 게임 =====
+1. 퀴즈 풀기
+2. 퀴즈 추가
+3. 퀴즈 목록
+4. 최고 점수
+0. 종료
+메뉴 번호를 선택하세요: ^C
+게임을 종료합니다.
+```
+<img width="926" height="621" alt="image" src="https://github.com/user-attachments/assets/da941ea9-e6c3-4e59-993b-1fd9ae5ebd80" />
+<img width="580" height="68" alt="image" src="https://github.com/user-attachments/assets/9e22742a-dec3-4b24-a4d8-5fb6025df14f" />
+<img width="674" height="187" alt="image" src="https://github.com/user-attachments/assets/db4d6f5a-166b-4a4f-ad03-8d83b35fd717" />
+
+
+
 
 # STEP3. 공통 입력/예외 처리 기준 (최소 요구)
 * 숫자 입력이 필요한 곳에서 다음 최소 케이스를 처리해야 한다.
