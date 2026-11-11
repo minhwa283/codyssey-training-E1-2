@@ -38,9 +38,12 @@ def main():
             elif choice == "2":
                 game.input_quiz()
 
-            elif choice in ("3", "4"):
+            elif choice == "3":
+                game.show_quiz_list()
+
+            elif choice == "4":
                 print(f"{choice}번 메뉴를 선택했습니다.")
-                
+
             else:
               print("잘못된 입력입니다. 다시 선택하세요.")
             

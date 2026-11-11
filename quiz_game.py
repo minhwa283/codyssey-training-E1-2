@@ -108,4 +108,18 @@ class QuizGame:
         self.add_quiz(question, options, int(answer))
 
         print("퀴즈가 추가되었습니다!")
-    
+
+    # 등록된 퀴즈 목록 출력
+    def show_quiz_list(self):
+        print("\n===== 퀴즈 목록 =====")
+
+        # 등록된 퀴즈가 없는 경우
+        if not self.quizzes:
+            print("등록된 퀴즈가 없습니다.")
+            return
+
+        # 등록된 퀴즈를 순서대로 출력
+        for index, quiz in enumerate(self.quizzes, start=1):
+            print(f"\n{index}번 문제")
+            quiz.show_question()
+            print(f"정답 번호: {quiz.answer}")
