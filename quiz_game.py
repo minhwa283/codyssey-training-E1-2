@@ -80,3 +80,32 @@ class QuizGame:
 
         # 최종 점수 출력
         print(f"\n퀴즈 종료! 최종 점수: {self.score}점")
+
+    # 사용자가 직접 퀴즈를 추가하는 메서드
+    def input_quiz(self):
+        print("\n===== 퀴즈 추가 =====")
+
+        # 문제 입력
+        question = input("문제를 입력하세요: ").strip()
+
+        # 보기 4개 입력
+        options = []
+
+        for i in range(1, 5):
+            option = input(f"{i}번 보기를 입력하세요: ").strip()
+            options.append(option)
+
+        # 정답 번호 입력
+        while True:
+            answer = input("정답 번호를 입력하세요 (1~4): ").strip()
+
+            if answer in ("1", "2", "3", "4"):
+                break
+
+            print("잘못된 입력입니다. 1~4 중에서 선택하세요.")
+
+        # 퀴즈 등록
+        self.add_quiz(question, options, int(answer))
+
+        print("퀴즈가 추가되었습니다!")
+    
