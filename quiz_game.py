@@ -81,6 +81,8 @@ class QuizGame:
                 self.score += 20
             else:
                 print("오답입니다.")
+                # 브랜치 테스트
+                print(f"정답은 {quiz.answer}번입니다.")
 
         # 최종 점수 출력
         print(f"\n퀴즈 종료! 최종 점수: {self.score}점")
