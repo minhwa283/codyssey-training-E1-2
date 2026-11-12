@@ -426,6 +426,97 @@ False
 * 퀴즈가 없는 경우를 처리한다.
 * Git: 기능 완성 후 커밋하고 main 브랜치로 병합한다.
 
+ ###  브랜치 병합(Merge)
+<img width="539" height="231" alt="image" src="https://github.com/user-attachments/assets/a6851ae6-457d-4336-8f69-12931b29c9c9" />
+
+```bash
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+# 새 브랜치 생성
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git branch feature/quiz-improvement
+# 새 브랜치로 이동
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git checkout feature/quiz-improvement
+# 현재 브랜치 확인
+Switched to branch 'feature/quiz-improvement'
+# *가 붙은 브랜치가 현재 작업 중인 브랜치
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git branch
+* feature/quiz-improvement
+  main
+
+# Changes not staged for commit은 파일은 수정했지만 아직 커밋할 파일로 등록하지 않았다
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git status
+On branch feature/quiz-improvement
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   quiz_game.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git add quiz_game.py
+# 1523687 커밋
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git commit -m "Feat: 오답 시 정답 번호 출력 기능 추가(브랜치)"
+[feature/quiz-improvement 1523687] Feat: 오답 시 정답 번호 출력 기능 추가(브랜치)
+ 1 file changed, 2 insertions(+)
+#커밋 결과 확인
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git log -1 --oneline
+1523687 (HEAD -> feature/quiz-improvement) Feat: 오답 시 정답 번호 출력 기능 추가(브랜치)
+
+# 브랜치 병합(Merge)
+# main 브랜치로 이동
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+# 기능 브랜치 병합
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git merge feature/quiz-improvement
+Updating 2c4d12b..1523687
+Fast-forward
+ quiz_game.py | 2 ++
+ 1 file changed, 2 insertions(+)
+# 병합 결과 확인
+# 1523687 main 이력에서 확인 가능
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git log -3 --oneline
+1523687 (HEAD -> main, feature/quiz-improvement) Feat: 오답 시 정답 번호 출력 기능 추가(브랜치)
+2c4d12b (origin/main, origin/HEAD) Feat: JSON 데이터 불러오기 및 종료 시 자동 저장
+0ace36d Feat: JSON 게임 데이터 저장 기능 구현
+
+# GitHub에 로컬에 없는 새로운 변경 사항이 있어서 Push가 거부되어 GitHub 변경 사항 가져오기
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git pull --rebase origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 1.55 KiB | 318.00 KiB/s, done.
+From https://github.com/minhwa283/codyssey-training-E1-2
+ * branch            main       -> FETCH_HEAD
+   2c4d12b..6afdbb2  main       -> origin/main
+Successfully rebased and updated refs/heads/main.
+# 병합한 코드 GitHub에 올리기
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 406 bytes | 406.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/minhwa283/codyssey-training-E1-2.git
+   6afdbb2..260f156  main -> main
+# 동기화 상태 확인
+minhwa283@GNIA-C202-C01:~/codyssey-training-E1-2$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+```
+<img width="633" height="152" alt="image" src="https://github.com/user-attachments/assets/872a099c-69f1-4fa1-a25f-e2198b4e7e59" />
+<img width="682" height="413" alt="image" src="https://github.com/user-attachments/assets/b0926450-fba7-4599-a064-ac62fa310fd2" />
+<img width="639" height="182" alt="image" src="https://github.com/user-attachments/assets/2caf93b3-485e-46a8-bf23-ea2930bbbffa" />
+
+
+
 # STEP7. 퀴즈 추가
 * 새로운 퀴즈를 등록할 수 있다.
 * 필요한 정보(문제, 선택지 4개, 정답 번호)를 입력받는다.
