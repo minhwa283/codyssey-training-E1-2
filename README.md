@@ -10,6 +10,10 @@ _[올인원 - 입학연수 E1-2]_
 
     📚 학습도구
     Python/Git/JSON  => Python 버전, VS Code, Git 확인
+<img width="698" height="134" alt="image" src="https://github.com/user-attachments/assets/10ec52e6-3113-4ee1-9d38-d4b7c4ffba98" />
+    
+    
+<br><br>    
 
 # 📌 개발환경 및 제약 사항
 
