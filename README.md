@@ -24,52 +24,94 @@ _[올인원 - 입학연수 E1-2]_
 #  📌 과제 목표 (4)
 이 과제를 마친 후, 학습자는 아래를 스스로 설명할 수 있어야 한다.
 
-### 👉 (1) Python 기초
+## 👉 (1) Python 기초
 <img width="734" height="355" alt="image" src="https://github.com/user-attachments/assets/21dcf598-f1fd-45ce-8f84-e3132c55abb4" />
 <img width="1488" height="317" alt="image" src="https://github.com/user-attachments/assets/6f7893af-0f4b-47a4-8cdd-be97294a8afe" />
 
 
-변수가 무엇이고, 왜 사용하는지 설명할 수 있다. 
+### 변수가 무엇이고, 왜 사용하는지 설명할 수 있다. 
 <img width="735" height="305" alt="image" src="https://github.com/user-attachments/assets/478501a6-d7fb-49ab-91e0-5718f511c892" />
+<br>
 
-함수를 정의하고, 매개변수와 반환값을 활용할 수 있다.
+### 함수를 정의하고, 매개변수와 반환값을 활용할 수 있다.
 <img width="736" height="454" alt="image" src="https://github.com/user-attachments/assets/0649b54b-9d88-41d3-aab2-dff5b7630df8" />
+<br>
 
-int, str, bool, list, dict의 차이를 설명할 수 있다.
+### int, str, bool, list, dict의 차이를 설명할 수 있다.
 <img width="734" height="489" alt="image" src="https://github.com/user-attachments/assets/d3f15342-8b91-4295-88a2-e5e175efe4f8" />
+<br><br>
+
 <img width="734" height="445" alt="image" src="https://github.com/user-attachments/assets/46d0363d-8671-4d3d-b5f7-5ccfa7df0241" />
 
-if/elif/else로 조건에 따라 다른 동작을 수행할 수 있다.  
-for와 while의 차이를 설명하고 적절히 선택할 수 있다.  
+### if/elif/else로 조건에 따라 다른 동작을 수행하고, for와 while의 차이를 설명하고 적절히 선택할 수 있다.  
 <img width="733" height="446" alt="image" src="https://github.com/user-attachments/assets/48ad6df6-2cc3-4b9b-bf18-10f925d31d3b" />
 
+------
+<br><br>
 
 
-### 👉 (2) 클래스와 객체
-<img width="737" height="499" alt="image" src="https://github.com/user-attachments/assets/8be27eb4-2366-4167-bcb4-aacceb652d89" />
+## 👉 (2) 클래스와 객체
+<img width="437" height="280" alt="image" src="https://github.com/user-attachments/assets/8be27eb4-2366-4167-bcb4-aacceb652d89" />
 
-클래스가 무엇이고, 왜 사용하는지 설명할 수 있다.  
-__init__ 메서드와 self의 역할을 설명할 수 있다.    
-클래스의 속성(attribute)과 메서드(method)를 정의하고 활용할 수 있다.
 
+    
+
+### 클래스가 무엇이고, 왜 사용하는지 설명할 수 있다.  
 <img width="736" height="491" alt="image" src="https://github.com/user-attachments/assets/a0f7c1c7-9001-462c-ab40-740076633c17" />
+<br>
+
+### __init__ 메서드와 self의 역할을 설명할 수 있다.
 <img width="732" height="464" alt="image" src="https://github.com/user-attachments/assets/b51c7772-20bf-48bd-a4ff-57fce6ecc08f" />
+<br>
+
+### 클래스의 속성(attribute)과 메서드(method)를 정의하고 활용할 수 있다.
 <img width="734" height="442" alt="image" src="https://github.com/user-attachments/assets/dc2a7690-f3ac-4f33-9490-d101146bed7c" />
 
-<img width="747" height="561" alt="image" src="https://github.com/user-attachments/assets/d02b97cc-c306-4c5a-8888-78f899759d1e" />
+
+<br><br>
+
+<img width="547" height="361" alt="image" src="https://github.com/user-attachments/assets/d02b97cc-c306-4c5a-8888-78f899759d1e" />
 
 
-### 👉 (3) 파일 입출력
-파일을 열고, 읽고, 쓰는 기본 과정을 설명할 수 있다.  
-JSON 형식이 무엇이고, 왜 데이터 저장에 사용하는지 설명할 수 있다.2  
-try/except를 사용하여 오류를 처리할 수 있다.  
+------
+<br><br>
 
 
-### 👉 (4) Git 기초
-Git이 무엇이고 왜 필요한지 설명할 수 있다.  
-init, add, commit, push, pull, checkout, clone이 각각 무엇을 하는지 설명할 수 있다.  
-브랜치를 생성하고 병합할 수 있다.  
-원격 저장소를 clone하고, pull로 변경사항을 가져올 수 있다.  
+## 👉 (3) 파일 입출력
+
+### 파일을 열고, 읽고, 쓰는 기본 과정을 설명할 수 있다.  
+<img width="734" height="432" alt="image" src="https://github.com/user-attachments/assets/e81d56b4-0b96-4730-8b49-c311c0d98af2" />  
+<br>  
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/88726fd4-51db-4271-9b7c-87c84d909a10" />
+<br><br>
+
+### JSON 형식이 무엇이고, 왜 데이터 저장에 사용하는지 설명할 수 있다. 
+<img width="733" height="425" alt="image" src="https://github.com/user-attachments/assets/14f0e358-8173-4c17-afee-1112b2b6e363" />
+<br><br>
+<img width="453" height="83" alt="image" src="https://github.com/user-attachments/assets/ae75681c-a768-4226-9798-e5bbe836f5ea" />
+<br><br>
+<img width="734" height="401" alt="image" src="https://github.com/user-attachments/assets/13b34ece-0b49-4132-9f0a-93712531b28b" />
+<br><br>
+
+### try/except를 사용하여 오류를 처리할 수 있다.  
+<img width="664" height="744" alt="image" src="https://github.com/user-attachments/assets/ef5360c3-dbd6-49d9-b0b8-d3a9d563740e" />
+
+
+------
+<br><br>
+
+
+## 👉 (4) Git 기초
+
+### Git이 무엇이고 왜 필요한지, (init, add, commit, push, pull, checkout, clone)이 각각 무엇을 하는지 설명할 수 있다. 원격 저장소를 clone하고, pull로 변경사항을 가져올 수 있다.  
+<img width="732" height="438" alt="image" src="https://github.com/user-attachments/assets/c6b3946e-3a24-4644-aeed-d29e2ad66ee3" />
+
+<br><br>
+
+### 브랜치를 생성하고 병합할 수 있다.  
+<img width="736" height="484" alt="image" src="https://github.com/user-attachments/assets/0be10eb1-55b6-4c9a-aca8-b029e8196822" />
+
 
 
 ------
