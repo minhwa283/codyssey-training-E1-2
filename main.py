@@ -29,21 +29,26 @@ def main():
         try:
             #.strip() 앞뒤 공백제거
             choice = input("메뉴 번호를 선택하세요: ").strip()
-       
+
+            # 0. 게임 종료
             if choice == "0":
                 game.save_state()
                 print("게임을 종료합니다.")
                 break
-
+            
+            # 1. 퀴즈 풀기         
             elif choice == "1":
                 game.play()
 
+            # 2. 퀴즈 추가
             elif choice == "2":
                 game.input_quiz()
 
+            # 3. 퀴즈 목록
             elif choice == "3":
                 game.show_quiz_list()
 
+            # 4. 최고 점수
             elif choice == "4":
                 game.show_high_score()
 

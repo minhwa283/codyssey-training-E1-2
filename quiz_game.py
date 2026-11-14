@@ -1,7 +1,6 @@
 ## Date : 2026-11-11
 ## Author : imminhwa
-## Description : 
-## 구현 기능 :          
+## Description : 퀴즈 추가, 목록 조회, 게임 실행, 점수 및 데이터 저장 등 게임 전체 기능을 관리하는 클래스
 
 import json
 from pathlib import Path
