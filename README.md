@@ -2,11 +2,10 @@ _[올인원 - 입학연수 E1-2]_
 <img width="687" height="210" alt="image" src="https://github.com/user-attachments/assets/c60c6b20-60e0-463c-921b-96afa1f33bd6" />
 
 <br><br>
-*함수(function), 메서드(method), 클래스
 
 # 📌 프로젝트 개요
 
-프로젝트 개요 작성하기
+Python을 활용하여 터미널에서 실행되는 퀴즈 게임을 개발하는 프로젝트입니다. 기본 문법과 클래스 기반 객체지향 프로그래밍을 적용하여 퀴즈 기능을 구현하고, JSON 파일을 통해 데이터를 영구 저장합니다. 또한 Git과 GitHub를 활용하여 기능별 변경 이력과 브랜치를 관리합니다.
 
     📚 학습도구
     Python/Git/JSON  => Python 버전, VS Code, Git 확인
@@ -135,6 +134,15 @@ _[올인원 - 입학연수 E1-2]_
 
 ### Git commit 10회 이상
 <img width="587" height="185" alt="image" src="https://github.com/user-attachments/assets/d2adeb25-242c-4728-a484-9149425121f0" />
+
+### 브랜치 생성 및 병합(checkout, merge) 기록
+<img width="785" height="119" alt="image" src="https://github.com/user-attachments/assets/7cfede5f-3169-42e8-a3a6-b0356a1d2974" />
+<img width="602" height="95" alt="image" src="https://github.com/user-attachments/assets/03fdf7e9-7b77-42b6-a798-05627e6f0b8d" />
+
+### clone과 pull을 각각 1회 이상 사용한 기록
+<img width="607" height="131" alt="image" src="https://github.com/user-attachments/assets/1d5f3f39-2fd9-421c-b140-e6f52926fd58" />
+<img width="461" height="59" alt="image" src="https://github.com/user-attachments/assets/7d1a32bc-4c31-407a-aa56-ce011b67ebce" />
+
 
 <br><br>
 
