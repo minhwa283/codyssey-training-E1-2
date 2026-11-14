@@ -1,8 +1,8 @@
 ## Date : 2026-11-11
 ## Author : imminhwa
-## Description : 
-## 구현 기능 :            
+## Description : 개별 퀴즈의 문제, 선택지, 정답 데이터를 관리하는 클래스
 
+       
 # 퀴즈 문제 하나를 관리하는 클래스
 class Quiz:
 
