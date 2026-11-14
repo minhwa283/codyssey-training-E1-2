@@ -119,21 +119,7 @@ _[올인원 - 입학연수 E1-2]_
 
 
 ------
-**🖥️ 실습 목록**
-----
-* STEP1 Git 저장소 설정
-* STEP2 메뉴 기능
-* STEP3 공통 입력/예외 처리 기준 (최소 요구)
-* STEP4 Quiz 클래스
-* STEP5 기본 퀴드 데이터
-* STEP6 퀴즈 풀기(브랜치 활용)
-* STEP7 퀴즈 추가
-* STEP8 퀴즈 목록
-* STEP9 점수 확인
-* STEP10 QuizGame 클래스
-* STEP11 파일 저장/불러오기 ('state.json**') **
-* STEP12 README.md 작성
-* STEP13 Git 저장소 복제 실습
+**🖥️ 실습 내용 **
 ----
 <br>
 
@@ -145,26 +131,58 @@ _[올인원 - 입학연수 E1-2]_
 <img width="1253" height="641" alt="image" src="https://github.com/user-attachments/assets/9ae84471-6c60-43fd-92ce-792993c93517" />
 
 * FR은 Functional Requirement의 약자로, '기능 요구사항'이라는 뜻
+<br><br>
 
-### 개발환경
-Python 버전, VS Code, Git 확인
-```bash
-minhwa283@GNIA-C202-C01:/mnt/c/Windows/system32$ lsb_release -a
-No LSB modules are available.
-Distributor ID: Ubuntu
-Description:    Ubuntu 26.04.1 LTS
-Release:        26.04
-Codename:       resolute
-minhwa283@GNIA-C202-C01:/mnt/c/Windows/system32$ python3 --version
-Python 3.14.4
-minhwa283@GNIA-C202-C01:/mnt/c/Windows/system32$ git --version
-git version 2.53.0
+### Git commit 10회 이상
+<img width="587" height="185" alt="image" src="https://github.com/user-attachments/assets/d2adeb25-242c-4728-a484-9149425121f0" />
 
-```
-<img width="454" height="121" alt="image" src="https://github.com/user-attachments/assets/6ad20110-3b81-4ede-aa7c-85dd46b51968" />
+<br><br>
+
+----
+# 1. 퀴즈 풀기
+메뉴 번호 선택 후 정답 입력 -> 정답입니다 or 오답입니다. 정답은 *번 입니다 표출
+<img width="483" height="555" alt="image" src="https://github.com/user-attachments/assets/95e757bc-cc6d-48de-867c-a707a5a0d79f" />
+
+# 2. 퀴즈 추가
+메뉴 번호 선택 후 퀴즈 추가 -> 퀴즈 풀기 실행 후 추가한 퀴즈 목록 확인 -> 게임 종료 후 json파일 저장
+<img width="336" height="326" alt="image" src="https://github.com/user-attachments/assets/a2db48ee-6315-47a7-8b37-c4c0d954d4a9" />
+<img width="310" height="466" alt="image" src="https://github.com/user-attachments/assets/ae33134d-cb2a-40cc-93b0-c7e8e4634c83" />
+<img width="494" height="701" alt="image" src="https://github.com/user-attachments/assets/cd1980e4-93ed-4646-8792-d0ad8ed1522b" />
+
+# 3. 퀴즈 목록
+메뉴 번호 선택 -> 퀴즈 리스트 출력  
+<img width="477" height="746" alt="image" src="https://github.com/user-attachments/assets/dd768bbe-a661-4603-a2f6-c32b3bb6027a" />
+
+# 4. 최고 점수 
+메뉴 번호 선택 -> 최고 점수 출력  
+<img width="263" height="128" alt="image" src="https://github.com/user-attachments/assets/11601e01-dc2a-44b3-bd54-b612f33dce90" />
+
+# 5. 게임 종료
+메뉴 번호 선택 -> 게임 데이터 저장 후 종료  
+<img width="332" height="151" alt="image" src="https://github.com/user-attachments/assets/9cba64d3-609b-4bb9-a242-b66f776d428e" />
 
 
-<br>
+<br><br><br>
+
+### 실습 상세 내역
+
+------
+**🖥️ 실습 목록**
+----
+* STEP1 Git 저장소 설정
+* STEP2 메뉴 기능
+* STEP3 공통 입력/예외 처리 기준 (최소 요구)
+* STEP4 Quiz 클래스
+* STEP5 기본 퀴즈 데이터
+* STEP6 퀴즈 풀기(브랜치 활용)
+* STEP7 퀴즈 추가
+* STEP8 퀴즈 목록
+* STEP9 점수 확인
+* STEP10 QuizGame 클래스
+* STEP11 파일 저장/불러오기 ('state.json**') **
+* STEP12 README.md 작성
+* STEP13 Git 저장소 복제 실습
+----
 
 # STEP1. Git 저장소 설정
 * GitHub에 새 저장소를 생성한다.
