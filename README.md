@@ -25,18 +25,38 @@ _[올인원 - 입학연수 E1-2]_
 이 과제를 마친 후, 학습자는 아래를 스스로 설명할 수 있어야 한다.
 
 ### 👉 (1) Python 기초
+<img width="734" height="355" alt="image" src="https://github.com/user-attachments/assets/21dcf598-f1fd-45ce-8f84-e3132c55abb4" />
+<img width="1488" height="317" alt="image" src="https://github.com/user-attachments/assets/6f7893af-0f4b-47a4-8cdd-be97294a8afe" />
 
-변수가 무엇이고, 왜 사용하는지 설명할 수 있다.  
-int, str, bool, list, dict의 차이를 설명할 수 있다.  
+
+변수가 무엇이고, 왜 사용하는지 설명할 수 있다. 
+<img width="735" height="305" alt="image" src="https://github.com/user-attachments/assets/478501a6-d7fb-49ab-91e0-5718f511c892" />
+
+함수를 정의하고, 매개변수와 반환값을 활용할 수 있다.
+<img width="736" height="454" alt="image" src="https://github.com/user-attachments/assets/0649b54b-9d88-41d3-aab2-dff5b7630df8" />
+
+int, str, bool, list, dict의 차이를 설명할 수 있다.
+<img width="734" height="489" alt="image" src="https://github.com/user-attachments/assets/d3f15342-8b91-4295-88a2-e5e175efe4f8" />
+<img width="734" height="445" alt="image" src="https://github.com/user-attachments/assets/46d0363d-8671-4d3d-b5f7-5ccfa7df0241" />
+
 if/elif/else로 조건에 따라 다른 동작을 수행할 수 있다.  
 for와 while의 차이를 설명하고 적절히 선택할 수 있다.  
-함수를 정의하고, 매개변수와 반환값을 활용할 수 있다.
+<img width="733" height="446" alt="image" src="https://github.com/user-attachments/assets/48ad6df6-2cc3-4b9b-bf18-10f925d31d3b" />
+
 
 
 ### 👉 (2) 클래스와 객체
+<img width="737" height="499" alt="image" src="https://github.com/user-attachments/assets/8be27eb4-2366-4167-bcb4-aacceb652d89" />
+
 클래스가 무엇이고, 왜 사용하는지 설명할 수 있다.  
 __init__ 메서드와 self의 역할을 설명할 수 있다.    
 클래스의 속성(attribute)과 메서드(method)를 정의하고 활용할 수 있다.
+
+<img width="736" height="491" alt="image" src="https://github.com/user-attachments/assets/a0f7c1c7-9001-462c-ab40-740076633c17" />
+<img width="732" height="464" alt="image" src="https://github.com/user-attachments/assets/b51c7772-20bf-48bd-a4ff-57fce6ecc08f" />
+<img width="734" height="442" alt="image" src="https://github.com/user-attachments/assets/dc2a7690-f3ac-4f33-9490-d101146bed7c" />
+
+<img width="747" height="561" alt="image" src="https://github.com/user-attachments/assets/d02b97cc-c306-4c5a-8888-78f899759d1e" />
 
 
 ### 👉 (3) 파일 입출력
